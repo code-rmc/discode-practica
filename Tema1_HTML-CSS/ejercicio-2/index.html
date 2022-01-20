@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 </head>
 
 <body>
@@ -27,6 +29,7 @@
                 <span></span>
                 <span></span>
             </div>
+
         </header>
 
         <article class="post">
@@ -67,10 +70,30 @@
         </section>
 
         <section class="labels">
-            <button class="labels-button">Well said...</button>
-            <button class="labels-button">This is a...</button>
-            <button class="labels-button">Can I add...</button>
-            <button class="labels-button">Thanks for sharing...</button>
+            <button role="button" id="button-left" class="button-left">
+                <span><i class="fas fa-angle-left"></i></span>
+            </button>
+            <div class="labels-tag">
+                <button class="labels-tag-button">Well said...</button>
+                <button class="labels-tag-button">This is a...</button>
+                <button class="labels-tag-button">Can I add...</button>
+                <button class="labels-tag-button">Thanks for sharing...</button>
+                <button class="labels-tag-button">Well said...</button>
+                <button class="labels-tag-button">This is a...</button>
+                <button class="labels-tag-button">Can I add...</button>
+                <button class="labels-tag-button">Thanks for sharing...</button>
+                <button class="labels-tag-button">Well said...</button>
+                <button class="labels-tag-button">This is a...</button>
+                <button class="labels-tag-button">Can I add...</button>
+                <button class="labels-tag-button">Thanks for sharing...</button>
+                <button class="labels-tag-button">Well said...</button>
+                <button class="labels-tag-button">This is a...</button>
+                <button class="labels-tag-button">Can I add...</button>
+                <button class="labels-tag-button">Thanks for sharing...</button>
+            </div>
+            <button role="button" id="button-right" class="button-right">
+                <span><i class="fas fa-angle-right"></i></span>
+            </button>
         </section>
 
         <section class="share">
@@ -87,6 +110,7 @@
         </footer>
     </main>
 
+    <script src="app.js"></script>
 </body>
 
 </html>

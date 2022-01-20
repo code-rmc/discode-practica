@@ -5,6 +5,7 @@
 :root{
     --gris: #8a8a8a;
     --gris-claro: #ddd;
+    --azul: #005eb0;
     --fsize: 1.2em;
     --fcoment: 0.9em;
 }
@@ -52,7 +53,7 @@ main{
     padding-left: 5px;
     padding-top: 3px;
     height: 100%;
-    width: 80%;
+    width: 100%;
     font-size: 0.6em;
 }
 .header-text h2{
@@ -103,7 +104,7 @@ main{
     padding: 10px;
 }
 .post-text{
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 15px;
 }
 .post-text-see{
@@ -122,10 +123,11 @@ main{
 }
 .post-info-more{
     margin: 0 0 10px 10px;
-    color: #005eb0;
+    color: var(--azul);
     cursor: pointer;
     font-size: 0.8em;
     font-weight: 600;
+	width: 87px;
 }
 .post-info-data{
     padding: 10px;
@@ -163,16 +165,61 @@ main{
 }
 /*------------------------*/
 .labels{
+    position: relative;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
-.labels-button{
-    background-color: rgba(255, 255, 255, 0);
+.labels-tag{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.labels-tag-button{
+    margin-right: 5px;
+    height: 30px;
+    min-width: max-content;
     padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid var(--gris);
     border-radius: 20px;
     font-size: var(--fcoment);
     color: var(--gris);
     cursor: pointer;
+}
+.active{
+    background-color: var(--azul);
+    border-color: var(--azul);
+    color: rgb(234, 234, 234);
+}
+.labels-tag-button:hover{
+	background-color: #1a7bd0;
+	border-color: #1a7bd0;
+	color: #FFF;
+}
+.labels .button-left, .labels .button-right{
+    position: absolute;
+    font-size: var(--fsize);
+    height: 100%;
+    width: 15px;
+    border: none;
+    background-color: #ffffff;
+    color: var(--gris);
+    cursor: pointer;
+}
+.labels .button-left:hover, .labels .button-right:hover{
+    color: black;
+}
+.labels .button-left{
+    left: 0;
+}
+.labels .button-right{
+    right: 0;
 }
 /*------------------------*/
 .share{
@@ -182,7 +229,7 @@ main{
     margin: 20px 0;
 }
 .share-action{
-    margin-left: 5px;
+    margin-right: 10px;
 }
 .share-action:hover{
     color: rgb(61, 61, 255);
@@ -190,7 +237,7 @@ main{
 }
 .share-action img{
     height: 15px;
-    margin: 0px 5px;
+    margin-right: 5px;
 }
 
 /*===================================
@@ -204,6 +251,7 @@ main{
 .footer img{
     height: 40px;
     margin-right: 5px;
+	cursor: pointer;
 }
 .footer-input{
     width: 100%;

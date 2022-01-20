@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Buscador de perfiles de GIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Buscador de perfil de GITHUB</h1>
+        <article class="search-user">
+            <form action="" method="post">
+                <div class="search-user-text">
+                    <label for="">Usuario:</label>
+                    <input id="user" type="text" placeholder="Nombre de Usuario">
+                </div>
+                <button>Buscar Perfil</button>
+            </form>
+        </article>
+
+        <article class="user-git">
+            <figure class="user-git-img">
+                <img id="user-img" src="" alt="imagen de Perfil">
+            </figure>
+            <section class="user-git-profile">
+                <h3>Nombre: </h3><span id="name" class="user-git-profile-details"></span>
+                <h3>Ubicacion:</h3><span id="ubi" class="user-git-profile-details"></span>
+                <h3>Informacion: </h3><span id="info" class="user-git-profile-details"></span>
+            </section>
+        </article>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta regresiva de cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+</head>
+
+<body>
+    <canvas id="my-canvas"></canvas>
+    <main>
+        <div class="title">
+            <h1>Fecha de cumpleaños</h1>
+            <h4>Cuenta Regresiva</h4>
+        </div>
+
+        <section class="countDown">
+            <div>
+                <p id="day">0</p>
+                <span>Dias</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Horas</span>
+            </div>
+            <div>
+                <p id="mint">00</p>
+                <span>Minutos</span>
+            </div>
+            <div>
+                <p id="second">00</p>
+                <span>Segundos</span>
+            </div>
+        </section>
+
+        <section class="container">
+            <form id="form" action="#" method="POST">
+                <div class="text">
+                    <label for="dateDay">Dia</label>
+                    <input type="number" name="dateDay" required>
+                </div>
+                <div class="text">
+                    <label for="dateMonth">Mes</label>
+                    <input type="number" name="dateMonth" value="07" required>
+                </div>
+                <div class="text">
+                    <label for="dateYear">Año</label>
+                    <input type="number" name="dateYear" value="2021" required>
+                </div>
+                <div class="text">
+                    <label for="timeHsMint">Hora</label>
+                    <input id="hoursInput" type="time" name="timeHsMint" value="23:59" required>
+                </div>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </section>
+
+    </main>
+
+
+    <script src="confetti.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

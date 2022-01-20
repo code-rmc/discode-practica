@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/red-velvet-cake.jpg');
+    background-size: cover;
+    color: #FFFF;
+}
+
+h4{
+    font-weight: 600;
+}
+
+canvas{
+    position: absolute;
+}
+
+.title{
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: #121235;
+    color: #97A1BF;
+    border-radius: 5px;
+    padding: 20px 60px;
+}
+form{
+    display: flex;
+}
+form input{
+    width: 55px;
+    padding: 10px;
+    background-color: #121235;
+    border: 1px solid #121235;
+    border-radius: 5px;
+    outline: none;
+    color: #D01A70;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+form button{
+    background-color: #221D5F;
+    width: 60px;
+    padding: 10px;
+    border: 1px solid #221D5F;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+}
+form button:hover{
+    background-color: #D01A70;
+}
+#hoursInput{
+    width: 70px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+.countDown{
+    display: flex;
+    border-radius: 5px;
+    margin: 50px 0;
+}
+.countDown > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100px;
+    height: 110px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #d01a6f5e;
+    border: 1px solid #12123566;
+}
+
+.countDown div p{
+    font-size: 2.2rem;
+}
+
+.countDown div span{
+    font-size: 0.85rem;
+    font-weight: 800;
+}
